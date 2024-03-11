@@ -1,0 +1,408 @@
+*************PYTON***************
+
+-->What is Python?
+	Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+	
+It is used for:
+
+	* web development (server-side),
+	* software development,
+	* mathematics,
+	* system scripting.
+
+-->What can Python do?
+
+	* Python can be used on a server to create web applications.
+	* Python can be used alongside software to create workflows.
+	* Python can connect to database systems. It can also read and modify files.
+	* Python can be used to handle big data and perform complex mathematics.
+	* Python can be used for rapid prototyping, or for production-ready software development
+
+-->Why Python?
+
+	* Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+	* Python has a simple syntax similar to the English language.
+	* Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+	* Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very            quick.
+	* Python can be treated in a procedural way, an object-oriented way or a functional way.
+
+ALl Python installation steps are done
+
+
+
+`````````````````````````````````
+Strings-- it is any data in text format
+Integer-- it is a number 1234....
+Decimal-- for decimal number we use float
+Boolean-- it is tru/false
+
+
+
+**********better practice start with cooment*************
+
+#Take information of student for college
+
+
+
+***********First Python Programm***************
+
+	print ("Hello Karnataka")
+
+//print one square box using print statement
+ 	
+	print(" ----")
+	print("|   |")
+	print("|   |")
+	print(" ----")
+
+*****************VARIABLES*****************
+	
+	age = 45 #Integer
+	
+	name = "Sushma" #String......normal text
+		
+	account_balance = 356.55 #Floating(Decimal)
+	
+	iam_coming = True #Boolean......true/false
+		
+	print(account_balance)
+
+***************Taking User Input****************
+
+//How to collect data information from user to rum programm
+
+Ex:-collect mobile number from user
+
+	mobile_number = input("Mobile Number:")
+	email_id = input("eneter your email_id")
+	print("email_id:-"+email_id)
+	print("Mob num:"+mobile_number)
+
+//To collect Name, Location, College
+
+	name =input ("name:")
+	location = input ("location:")
+	college = input ("college:")
+
+	print (name +" is from " + location+ " she is studying at " + college)
+
+OUTPUT
+````````
+name:Sushma
+location:Tumkur
+college:SIT
+Sushma is from Tumkur she is studying at SIT
+
+______________________________________________________________________________________________________
+
+
+//Build A simple calculator
+
+	Add 2 numbers:
+
+	case1 : 21+12=33
+
+	case2 : 12.2+14.3=26.5
+
+
+FirstNumber = input("enter first number :")
+SecondNumber = input("enter second number :")
+
+
+print("first num: " + FirstNumber)
+print("second num: " + SecondNumber)
+sum = FirstNumber + SecondNumber
+print("total : "+ sum).....................this program is combining two numbers, but we need add twu numbers
+
+
+FirstNumber = int(input("enter first number :"))
+SecondNumber = int(input("enter second number :"))
+
+print( FirstNumber)
+print( SecondNumber)
+sum = FirstNumber + SecondNumber
+print( sum)
+
+OUTPUT
+```````
+enter first number :12
+enter second number :23
+12
+23
+35
+
+
+````````````Add two decimal numbers```````````
+
+FirstNumber = float(input("enter first number :"))...............instead of INT use float
+SecondNumber = float(input("enter second number :"))
+
+print( FirstNumber)
+print( SecondNumber)
+sum = FirstNumber + SecondNumber
+print( sum)
+
+
+we can do same for subtraction, multiplication and division
+
+__________________________________________________________________________________________________________________
+
+************Strings in Python*******How to manipulate and play with them
+
+------How to get data from different sources in advance concept-----------
+
+--print ("MicroDegree")
+
+OUTPUT
+``````
+MicroDegree
+
+---print ("Micro\nDegree")-----------------'\n'---print in next line--------------
+---print ("Micro\tDegree")------------------'\t'---tab space between two words----Micro	Degree
+---print ("Micro\"Degree")------------------\'-------quotes between two words-----Micro"Degree
+
+__________________________________________________________________________________________________________________
+
+
+-----website="MicroDegree"
+     print(website).......................MicroDegree is a string assigned to variable 'website' then print
+
+
+//string and concatination----how to join two words
+
+firstname="Micro"
+secondname="Degree"
+print(firstname + secondname)
+
+//Print in multiline----------------------start with (''')thriple quotes
+
+message='''Hello MicroDegree
+I have completed course
+
+so what is my next step'''
+
+print(message)
+
+
+//How to access individual characteristics in a word---using index
+
+
+message="Hello MicroDegree"
+print(message[6])
+
+OUTPUT
+``````
+M
+
+ex-Hello Microdegree
+   12345 6....-3-2-1
+
+//How to access group of characteristics 
+
+message="Hello MicroDegree"
+print(message[5:11])-----------------we use : to access for start and end index
+
+
+print(message[5:])----------------it take default end index
+print(message[:11])
+
+
+//print default with index
+
+message="Hello MicroDegree"
+
+message_copy=message[5:]
+print(message)
+print(message_copy)
+
+///////
+
+message="Hello MicroDegree"
+
+print(message[1:-1])--------OUTPUT---ello MicroDegre-----it will not consider 1st and last character
+
+////Formative string to concate words
+
+name="Hello MicroDegree"
+
+print("Sushma here "  + name + " I learnt something")-----------
+
+print(f"Sushma here  {name I learnt something3")----------we can use {} to concate words
+
+
+OUTPUT
+```````
+Sushma here Hello MicroDegree I learnt something
+Sushma here  Hello MicroDegree I learnt something3
+
+
+***********here we learnt how to access different strings
+
+
+_____________________________________________________________________________________________________________________
+
+
+***************String Manipulation*****************************Inbuilt Methods
+
+----How to change existing string
+-----Manipulatio means-Example to access middle word in a string(sentence)
+		-------Plagiarism check ina assignment
+
+
+//Length function----to check size or length of string
+
+	name="Hello MicroDegree"
+	print(len(name))..................OUTPUT---17
+
+//How to convert string ina upper case
+
+	name="Hello MicroDegree"
+	print(name.upper()).........(.upper())..(.lower())...OUTPUT-HELLO MICRODEGREE
+
+//Try to print long string
+
+	India="The Indian government led by the Hindu nationalist Bharatiya Janata Party (BJP)"\
+      " escalated its crackdown on civil society and the media."\
+    "Authorities prosecute activists, journalists, peaceful protesters, "\
+      "and other critics on fabricated counterterrorism and hate speech laws."\
+    "They have shut down rights groups using foreign funding regulations or unfounded allegations of financial irregularities. "
+	
+
+	print(India)
+
+-------print(India.find('a'))---------OUTPUT-8--(. operation)
+
+-------print(India.find('Hindu'))------OUTPUT-33
+
+--------print(India.replace('and','by'))
+
+-----------print('T' in India)-------'in' operation  to see word existing or not (true/false)
+
+-----------print(India.upper().lower())
+
+____________________________________________________________________________________________________
+
+********************Working with numbers***********************
+
+
+account_balance = -17.43
+print(account_balance)..........OUTPUT--17.43
+
+
+----Use basic Math operation
+
+print(24+5)
+print(24-5)
+print(24/5)=6.25....................do not want deciall use // 
+
+---Modulous operator
+
+print(25%4 )-------reminder is 1
+
+for 3^2----print(3**2)=9---------for to the power of number use **
+
+---Group of Math statement
+
+print(24 + 15*3 )
+
+---paranthesis for group of math
+
+total=(24-5) + (15*3 )
+print(total)
+
+
+
+------print in diff way
+
+total=253
+
+print("My total marks is "+ str(total))
+
+or
+
+total=253
+
+print("My total marks is ", total)
+
+
+
+
+------
+total=12
+total=total+12 also we can writre
+total+=12
+
+--------Round function----------
+
+total=253.32
+
+print(round(total))-------------it truncate decimal number-------OUTPUT is 253
+
+
+-----Absolute function-----
+for negative number we use abs function it remove - sign
+
+total=-253.32
+
+print(abs(total))--------OUTPUT isc253.32
+
+
+------print(pow(3,2))---=9
+
+------print(max(2533,2246))-----it gives max number
+
+
+---------import math
+	  print(math.ceil(2533.2246))---OUTPUT-2534
+
+
+-------import math
+	print(math.floor(2533.2246))-----2533
+
+-------import math
+	print(math.sqrt(9))--------9
+
+--------try for (math.) functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
